@@ -9,7 +9,6 @@ import sys
 class HelloWorldState(TypedDict):
     greeting: str # This key will store the greeting message
     
-
 # Define the node function
 def hello_world_node(state:HelloWorldState):
     state["greeting"] = "Hello World, " + state["greeting"]
